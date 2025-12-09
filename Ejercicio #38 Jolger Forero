@@ -1,0 +1,14 @@
+def pedir_datos():
+    num_1 = float(input("Digite el primer num:"))
+    num_2 = float(input("Digite el segundo num:"))
+    return num_1, num_2
+def hacer_operacion(num_1, num_2):
+    numero_mayor = (num_1 + num_2 + abs(num_1 - num_2)) / 2
+    return numero_mayor
+def mensaje(numero_mayor):
+    print("El numero numero mayor es:" + str(numero_mayor))
+
+#zona de codigo principal
+num_1, num_2 = pedir_datos()
+numero_mayor = hacer_operacion(num_1, num_2)
+mensaje (numero_mayor)
