@@ -1,0 +1,22 @@
+def solicitar_base():
+    base= int(input("digite la longitud de la base "))
+    return base
+def solicitar_ancho():
+    ancho=int(input("digite el ancho de la base "))
+    return ancho
+def pedir_altura():
+    altura=int(input("digite la altura de la piramide "))
+    return altura
+def hacer_calculo(base,ancho,altura):
+    total= (base * altura * ancho)/3
+    return total
+def mostrar_resultado(total):
+    print("el volumen de la piramide es " + str(total))
+
+#zona de codigo principal
+
+base = solicitar_base()
+ancho=solicitar_ancho()
+altura= pedir_altura()
+total= hacer_calculo(base,ancho,altura)
+mostrar_resultado(total)
