@@ -1,0 +1,18 @@
+def recibir_datos():
+    primer_numero = int(input("escriba el primer numero que se pide:"))
+    segundo_numero = int(input("escriba el segundo numero que se pide:"))
+    return primer_numero, segundo_numero
+def realizar_operacion(primer_numero,segundo_numero):
+    if primer_numero % segundo_numero == 0:
+        mnsj = primer_numero, "es multiplo de", segundo_numero
+    else:
+        mnsj = primer_numero, " no es multiplo de", segundo_numero
+    return mnsj
+def mensaje(mnsj):
+    print("el multiplo es:" + str(mnsj))
+
+#zona de codigo principal
+
+primer_numero, segundo_numero = recibir_datos()
+mnsj = realizar_operacion(primer_numero, segundo_numero)
+mensaje(mnsj)
