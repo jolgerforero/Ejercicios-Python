@@ -1,0 +1,15 @@
+def pedir_numero():
+    numero = float(input("Digite el numero:"))
+    return numero
+def procesar(numero):
+    raiz= numero **0.5
+    return raiz
+def mensaje(raiz):
+    print("la raiz es"+ str(raiz))
+
+
+#Zona de codigo principal
+
+numero = pedir_numero()
+raiz = procesar(numero)
+mensaje(raiz)
