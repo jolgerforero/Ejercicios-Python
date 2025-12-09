@@ -1,0 +1,15 @@
+def encontrar_datos():
+    num_1 = float(input("Digite numero 1:"))
+    num_2 = float(input("Digite numero 2:"))
+    return num_1, num_2
+def calcular_total(num_1, num_2):
+    prom= num_1 + num_2 / 2
+    return prom
+def mensaje(prom):
+    print("El prom del numero es"+ str(prom))
+
+#Zona de codigo primcipal
+
+num_1, num_2 = encontrar_datos()
+prom = calcular_total(num_1, num_2)
+mensaje(prom)
